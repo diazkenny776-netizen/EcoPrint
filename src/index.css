@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --ecp-red: #D7263D;
+  --ecp-sky: #4FD1C5;
+  --ecp-black: #0B0B0B;
+  --ecp-white: #FFFFFF;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+body{
+  @apply bg-white text-ecoprint-black font-outfit leading-relaxed;
+}
+
+/* Component helpers */
+.btn-cta{
+  @apply bg-ecoprint-red text-white px-4 py-2 rounded-md font-semibold shadow-sm hover:opacity-95;
+}
